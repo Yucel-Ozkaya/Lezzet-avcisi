@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,500&display=swap');
+
+
+
+/* menu start*/
+  *{
+      margin: 0;
+      padding: 0;
+      /* box-sizing: border-box; */
+      outline: none;
+      /* background-color: #CA955C; */
+      color: whitesmoke;
+      font-family: 'Poppins', sans-serif;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .conteiner{
+      background-color: #EDDFB3;
+      display: block;
+      width: 100vw;
+      height: 150vh;
+      
+    }
+    .navbar{
+        background-color: #CA955C;
+        width: 100vw;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* position: fixed; */
+        
+      
+    }
+    .blackbox{
+      width: 100px;
+      height: 60px;
+      background-color: #CA955C;
+      /* background-color: black; */
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-grow: 1;
+      
+    }
+
+    .blackbox p a{
+        width: 150px;
+        height: 60px;
+        /* background-color: #CA955C; */
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        
+        
+    }
+
+    .blackbox p a:hover{
+        display: flex;
+        background-color: #42855B;
+        width: 180px;
+        height: 60px;
+        border-style: ridge;
+        border-radius: 50px;
+        transition: 0.8s;
+        
+    }
+  
+    .bluebox{
+      
+      width: 150px;
+      height: 60px;
+      /* background-color: blue; */
+      display: flex;
+      justify-content: space-around;
+      flex-grow: 4;
+      z-index: 4;
+      
+    }
+ 
+    .menuu {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .bluebox li{
+      float: left;
+      width: 150px;
+      position: relative;
+
+    }
+    .bluebox li ul{
+      position: absolute;
+      display: none;
+      left: 0;
+      top: 60;
+      overflow: hidden;
+      
+    }
+
+    .bluebox li a{
+        display: block;
+        /* background-color: rgb(71, 71, 87); */
+        background-color: #CA955C;
+        /* color: whitesmoke; */
+        width: 150px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+    }
+  
+    .bluebox li a:hover{
+      /* background-color: blue; */
+      /* color: black; */
+      background-color: #42855B;
+      transition: 0.8s;
+    }
+  
+    .bluebox li:hover .ara{
+      display: block;
+      
+    }
+       
+    .greenbox{
+        width: 100px;
+        height: 60px;
+        /* background-color: green; */
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-grow: 1;
+    }
+
+    .greenbox ul{
+      display: flex;
+      
+      width: 100x;
+      height: 60px;
+    }
+  
+    .greenbox ul img {
+      display: block;
+      padding: 0 10px;
+      width: 60px;
+      height: 60px;
+      
+    }
+  
+    .greenbox ul .t:hover{
+      border-style: ridge;
+      background-color: blue;
+      width: 80px;
+      height: 80px;
+      border-radius: 1em;
+      
+      transition: 0.8s;
+    }
+  
+    .greenbox ul .ı:hover{
+      border-style: ridge;
+      background-color: crimson;
+      border-radius: 1em;
+      width: 80px;
+      height: 80px;
+      transition: 0.8s;
+    }
+
+    a,ul{
+      text-decoration: none;
+      list-style-type: none;
+    }
+/* menu end */
+
+/* gövde start */
+
+    .govde{
+        background-color: #42855B;
+        display: flex;
+        margin-left: 10vw;
+        margin-top: 3vh;
+        width: 80vw;
+        height: 130vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .bolum1{
+            display: flex;
+            background-color: #CA955C;
+            margin-top: 5vh;
+            width: 75vw;
+            height: 10vh;
+            align-items: center;
+            justify-content: center;
+        }
+            .bolum1 h4{
+                display: flex;
+                width: 45vw;
+                height: 10vh;
+                background-color: #CA955C;
+                align-items: center;
+                justify-content: center;
+
+            }
+            .bolum1 h4:hover{
+                color: black;
+                transition: 0.8s;
+            }
+
+
+        .bolum2{
+            display: flex;
+            background-color: white;
+            flex-wrap: nowrap;
+            width: 75vw;
+            height: 60vh;
+        }
+/* silider Start (bolum 2 dahıl) */
+            .bolum2 .item2{
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                transition: all ease 0.8s;
+            }
+                .bolum2 .item2 img{
+                    width: 100%;
+                    height: 60vh;
+                    object-fit: cover;
+
+                }
+            .bolum2 .item2:hover{
+                width: 200%;
+            }
+            .bolum2 .item2 .text{
+                position: absolute;
+                left: 0;
+                bottom: -20px;
+                width: 100%;
+                height: 100%;
+                padding: 3vw 3vh;
+                display: flex;
+                align-items: flex-end;
+                opacity: 0;
+                transition: all ease 0.5s 0.2s;
+            }
+            .bolum2 .item2:hover .text{
+                opacity: 1;
+                bottom: 0;
+
+            }
+            .bolum2 .item, .item2 .text h3{
+                font-size: 23px;
+                font-weight: 800;
+                color: #FF1700;
+            }
+            .bolum2 .item2 .text a{
+                color: whitesmoke;
+                font-size: 18px; 
+                left: 0;
+            }
+            
+/* slider End */
+
+/* Tarif sayfarı sayfası kutular --- Start */
+.kutu1{
+  display: flex;
+  background-color: orange;
+  flex-wrap: nowrap;
+  width: 25vw;
+  height: 60vh;
+  
+}
+  .kutu1 img{
+  width: 25vw;
+  height: 60vh;
+  }
+
+.kutu2{
+  display: flex;
+  background-color: #EDDFB3;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  width: 75vw;
+  height: 60vh;
+  
+}
+.kutu3{
+  display: flex;
+  
+  flex-wrap: nowrap;
+  background-color: #1A4D2E;
+  width: 50vw;
+  height: 25vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+table{
+  display: flex;
+  background-color: #42855B;
+  width: 100%;
+  height: 20vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+
+td, th {
+  text-align: center;
+  padding: 5px 20px;
+}
+.kutu4{
+  display: flex;
+  background-color: #1A4D2E;
+  flex-wrap: nowrap;
+  width: 50vw;
+  height: 35vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+.İçindekiler{
+  display: flex;
+  background-color: #1A4D2E;
+  width: 48vw;
+  height: 20vh;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 2vh;
+  
+}
+.İçindekiler ul li{
+  display: flex;
+  background-color: #1A4D2E;
+  font-size: small;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2vw;
+  
+}
+
+/* tarif sayfarı sayfası kutular --- End */
+
+        .bolum3{
+    
+            display: flex;
+            background-color: #CA955C;
+            
+            width: 75vw;
+            height: 50vh;
+        }
+            .bolum3 p{
+                /* color: black; */
+                margin: 10px;
+                font-weight: 800;
+                font-size: small;
+                overflow: scroll;
+                overflow-x: hidden;
+
+            }
+
+
+
+
+
+/* gövde end */
+
+
+/* footer start */
+    
+    footer{
+        display: flex;
+        align-items: center;
+        background-color: #CA955C;
+        height: 20vh;
+    }
+
+/* footer end */
+
